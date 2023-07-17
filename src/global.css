@@ -1,0 +1,121 @@
+.wrapper {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+  align-items: "center";
+}
+.wrapper_one {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hangman-draw {
+  position: relative;
+  width: fit-content;
+}
+
+.hangman-draw_el {
+  height: 10px;
+  width: 200px;
+  background-color: black;
+  margin-left: 120px;
+}
+
+.hangman-draw_el2 {
+  height: 400px;
+  width: 10px;
+  background-color: black;
+  margin-left: 120px;
+}
+
+.hangman-draw_el3 {
+  height: 10px;
+  width: 250px;
+  background-color: black;
+}
+
+.hangman-draw_el4 {
+  height: 50px;
+  width: 10px;
+  background-color: black;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.head {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 10px solid black;
+  position: absolute;
+  top: 50px;
+  right: -30px;
+}
+
+.body_div {
+  width: 10px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  top: 120px;
+  right: 0;
+}
+.right_hand {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  top: 150px;
+  right: -100px;
+  rotate: -30deg;
+  transform-origin: left bottom;
+}
+
+.left_hand {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  top: 150px;
+  right: 10px;
+  rotate: 30deg;
+  transform-origin: right bottom;
+}
+
+.left_leg {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  top: 210px;
+  right: 0;
+  rotate: -60deg;
+  transform-origin: right bottom;
+}
+
+.right_leg {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  top: 210px;
+  right: -90px;
+  rotate: 60deg;
+  transform-origin: left bottom;
+}
+
+/* ================ hang wrod ============== */
+
+.hangWord_wrapper {
+  display: flex;
+  gap: 0.25em;
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: monospace;
+}
