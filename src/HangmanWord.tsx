@@ -1,21 +1,26 @@
 import "./global.css";
 
-const word = "text";
 type HangmanWordProps = {
-  guessedLetters: string;
+  guessedLetters: string[];
   wordToGuess: string;
+  reveal?: boolean;
 };
-const HangmanWord = ({ guessedLetters, wordToGuess }: HangmanWordProps) => {
-  
+const HangmanWord = ({
+  guessedLetters,
+  wordToGuess,
+  reveal = false,
+}: HangmanWordProps) => {
   return (
     <div className="hangWord_wrapper">
       {wordToGuess.split("").map((letter, index) => (
-        <span style={{ borderBottom: ".1em solid black" }} key={index}>
+        <span key={index} style={{ borderBottom: ".1em solid black" }}>
           <span
             style={{
-              visibility: guessedLetters.includes(letter)
-                ? "visible"
-                : "hidden",
+              visibility:
+                guessedLetters.includes(letter) || reveal
+                  ? "visible"
+                  : "hidden",
+                  color:!guessedLetters.includes(letter) && reveal ? "red" : "black"
             }}
           >
             {letter}
