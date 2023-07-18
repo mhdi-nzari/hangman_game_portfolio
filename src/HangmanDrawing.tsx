@@ -9,17 +9,17 @@ const right_leg = <div className="right_leg" />;
 
 const left_leg = <div className="left_leg" />;
 
+type HangmanDrawingProps = {
+  numberOfGusses: number;
+};
 
+const BODY_PARTS = [HEAD, BODY, right_hand, left_hand, right_leg, left_leg];
 
-const HangmanDrawing = () => {
+const HangmanDrawing = ({ numberOfGusses }: HangmanDrawingProps) => {
   return (
     <div className="hangman-draw">
-      {HEAD}
-      {BODY}
-      {right_hand}
-      {left_hand}
-      {right_leg}
-      {left_leg}
+
+      {BODY_PARTS.slice(0 , numberOfGusses)}
       <div className="hangman-draw_el4" />
       <div className="hangman-draw_el" />
       <div className="hangman-draw_el2" />

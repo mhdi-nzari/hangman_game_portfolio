@@ -1,11 +1,15 @@
 import "./global.css";
 
 const word = "text";
-const HangmanWord = () => {
-  const guessedLetters = ["t", "e", "g"];
+type HangmanWordProps = {
+  guessedLetters: string;
+  wordToGuess: string;
+};
+const HangmanWord = ({ guessedLetters, wordToGuess }: HangmanWordProps) => {
+  
   return (
     <div className="hangWord_wrapper">
-      {word.split("").map((letter, index) => (
+      {wordToGuess.split("").map((letter, index) => (
         <span style={{ borderBottom: ".1em solid black" }} key={index}>
           <span
             style={{
