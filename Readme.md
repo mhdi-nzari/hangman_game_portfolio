@@ -28,4 +28,4 @@ yarn build
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Periview Website
-![mini shop website,mahdi nazari portfolio](https://github.com/mhdi-nzari/hangman_game_portfolio/blob/main/Preview.png?raw=true)
+![mini game website,mahdi nazari portfolio](https://github.com/mhdi-nzari/hangman_game_portfolio/blob/main/Preview.png?raw=true)
