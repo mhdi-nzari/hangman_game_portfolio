@@ -10,16 +10,16 @@ const right_leg = <div className="right_leg" />;
 const left_leg = <div className="left_leg" />;
 
 type HangmanDrawingProps = {
-  numberOfGusses: number;
+  numberOfGuesses: number;
 };
 
 const BODY_PARTS = [HEAD, BODY, right_hand, left_hand, right_leg, left_leg];
 
-const HangmanDrawing = ({ numberOfGusses }: HangmanDrawingProps) => {
+const HangmanDrawing = ({ numberOfGuesses }: HangmanDrawingProps) => {
   return (
-    <div className="hangman-draw">
+    <div className="hangman-draw" >
 
-      {BODY_PARTS.slice(0 , numberOfGusses)}
+      {BODY_PARTS.slice(0 , numberOfGuesses)}
       <div className="hangman-draw_el4" />
       <div className="hangman-draw_el" />
       <div className="hangman-draw_el2" />
